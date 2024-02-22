@@ -15,6 +15,10 @@
             },
             "type": "array"
         },
+        "bigint1": {
+            "default": 1,
+            "type": "number"
+        },
         "boolean1": {
             "default": true,
             "type": "boolean"
@@ -24,6 +28,10 @@
             "type": "integer"
         },
         "integer2": {
+            "default": 1,
+            "type": "integer"
+        },
+        "integer3": {
             "default": 1,
             "type": "integer"
         },

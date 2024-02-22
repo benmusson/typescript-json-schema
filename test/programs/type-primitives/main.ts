@@ -9,9 +9,13 @@ class MyObject {
 
     number1: number       = 1;
 
+    bigint1: bigint       = 1n;
+
     /** @TJS-type integer */
     integer1: number      = 1;
     integer2: integer     = 1;
+    /** @TJS-type integer */
+    integer3: bigint      = 1n;
 
     string1: string       = "defaultValue";
 

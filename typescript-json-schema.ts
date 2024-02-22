@@ -697,6 +697,10 @@ export class JsonSchemaGenerator {
             } else if (propertyTypeString === "Date" && !this.args.rejectDateType) {
                 definition.type = "string";
                 definition.format = definition.format || "date-time";
+            } else if (propertyTypeString === "bigint") {
+                definition.type = "number";
+                definition.properties = {};
+                definition.additionalProperties = false;
             } else if (propertyTypeString === "object") {
                 definition.type = "object";
                 definition.properties = {};
